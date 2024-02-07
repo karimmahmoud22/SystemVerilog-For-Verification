@@ -18,9 +18,7 @@ module read_from_file();
         // r: in read mode
         myfile = $fopen("map.txt","r");
 
-        // check the end of file
         while( ! $feof(myfile) ) begin
-            // read the elements from the file
             $fscanf(myfile, "%d  %s", i , s );
             map[s] = i;
         end
@@ -38,10 +36,6 @@ module read_from_file();
         $display(map);
 
         $display( "%0d           %0d", min_a, max_a );
-
-        // Each file has a unique handler e.g. 8000 0003
-        $display( "%0d", myfile);
-
 
     end
 
