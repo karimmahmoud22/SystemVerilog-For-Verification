@@ -13,6 +13,12 @@ module queue2();
 
     initial begin
 
+        // Note about $
+        // if $ is used at left [$:2] means [0:2]
+        // if $ is used at right [2:$] means [2:till end]        
+        q1 = {q1[$:1] , 8};
+        $display("q1 = %p",q1);
+
         // eqivalent to insert(1,7)
         q2 = { q2[0] , i , q2[1:$] };
         $display("q2 = %p",q2);

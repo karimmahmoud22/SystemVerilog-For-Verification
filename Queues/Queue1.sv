@@ -4,6 +4,19 @@
     Date:    7th of February 2024
 */
 
+/*
+    Notes:
+    The queue elements are stored in contiguous locations, and so it is efficient to 
+    push and pop elements from the front and back. 
+    This takes a fixed amount of time no matter how large the queue.
+
+    Adding and deleting elements in the middle of a queue requires shifting the 
+    existing data to make room. The time to do this grows linearly with the size of 
+    the queue.
+
+    You can also copy the contents of a fixed or dynamic array into a queue.
+*/
+
 module queue1();
     int i=7;
     int q1[$] = {3,4};
