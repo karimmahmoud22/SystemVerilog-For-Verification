@@ -29,8 +29,6 @@ module arrays();
 endmodule
 
 
-
-
 /*
 
 module arrays();
