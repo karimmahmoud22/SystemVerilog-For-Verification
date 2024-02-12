@@ -54,6 +54,7 @@ module queue1();
         q2.clear();
 
         // delete the queue
+        // you can also pass the index to the delete method
         q2.delete();
         $display("q2 = %p",q2);
 

@@ -4,7 +4,7 @@
     Date:    11th of February 2024
 */
 
-module strings();
+module Task1();
 
     initial begin
         #10;

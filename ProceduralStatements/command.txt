@@ -1,0 +1,7 @@
+add
+subtract
+
+multiply
+done
+store
+jump
