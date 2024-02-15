@@ -9,6 +9,7 @@ module associative_arrays();
     initial begin
 
         // int is the data type of the content that we use to search for an element 
+        // Note: You can use * instead of int ( * refers to any data type)
         int assoc [int];
 
         int idx=1;

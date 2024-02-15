@@ -6,9 +6,12 @@
 
 module arrays();
 
+    // compact declaration
     int arr1 [4] = '{1,2,3,4};  // 4 ints [0]...[3]
     int arr2 [5];
 
+    // verbose declaration 2-D array 2x3
+    int arr3 [0:1][0:2];
     initial begin
 
         $display("1: arr1 = ", arr1);
@@ -25,6 +28,10 @@ module arrays();
 
         arr2 = '{default:-1};
         $display("6: arr2 = ", arr2);
+
+        arr3 = '{'{1,2,3} ,
+                 '{3,4,5} };
+        $display("7: arr3 = ", arr3);
     end
 endmodule
 
