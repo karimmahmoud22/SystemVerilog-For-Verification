@@ -2,6 +2,8 @@
     purpose: This file contains scoping rules example
     Author: Karim Mahmoud Kamal
     Date:    17th of February 2024
+
+    ==> NOT WORKING
 */
 
 
@@ -19,10 +21,12 @@ program p;
         endtask
     endclass
 
-initial begin
-    limit = $root.limit;
-    Foo bar;
-    bar = new;
-    b.array = new [limit];
-    b.print(limit);
-end
+    initial begin
+        limit = $root.limit;
+        Foo bar;
+        bar = new;
+        b.array = new [limit];
+        b.print(limit);
+    end
+
+endprogram
