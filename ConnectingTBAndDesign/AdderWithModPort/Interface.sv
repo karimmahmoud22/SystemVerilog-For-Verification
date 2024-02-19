@@ -11,5 +11,6 @@ interface intf();
 
     modport dut ( input a, b , output c );
     modport tb (output a, b , input c);    
+    modport monitor (input a, b, c);
 
 endinterface

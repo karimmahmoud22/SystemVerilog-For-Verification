@@ -8,4 +8,5 @@ module top( );
     intf i1();
     adder a1 ( i1.dut );
     test t1 ( i1.tb );
+    monitor m1 ( i1.monitor );
 endmodule
