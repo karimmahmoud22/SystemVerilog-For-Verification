@@ -23,3 +23,6 @@ module arbiter_tb( arb_int a );
     end
 
 endmodule
+
+
+//TB ==> Here we can use non-blocking assignments only as we use interface
