@@ -19,7 +19,7 @@ module top;
         }
 
         constraint reasonable {         // Linit test length
-            run_for_n_frames inside { [1, 100] };
+            run_for_n_frames inside { [1: 100] };
         }
     endclass: eth_cfg
 
@@ -33,7 +33,7 @@ module top;
         eth_cfg2.randomize();
 
         $display("eth_cfg1.in_use = %0d", eth_cfg1.in_use);
-        $display("eth_cfg1.mac_addr = %0h", eth_cfg1.mac_addr);
+        $display("eth_cfg1.mac_addr = %0p", eth_cfg1.mac_addr);
         $display("eth_cfg1.is_100 = %0d", eth_cfg1.is_100);
         $display("eth_cfg1.run_for_n_frames = %0d", eth_cfg1.run_for_n_frames);
 
@@ -43,5 +43,9 @@ endmodule
 /*
 Note:
   
-
+Output:
+    eth_cfg1.in_use = 9
+    eth_cfg1.mac_addr = '{'h60817091650b, 'h142bf77dab56, 'h82861e72f4e, 'h54265f051522} 
+    eth_cfg1.is_100 = 12
+    eth_cfg1.run_for_n_frames = 22
 */
