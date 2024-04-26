@@ -4,7 +4,7 @@
 This repository contains SystemVerilog code examples aimed at illustrating various verification techniques. The examples are sourced from three main references: 
   - "SystemVerilog for Verification: A Guide to Learning the Testbench Language Features" 
   - Dr. Ayman Wahba Lectures
-  - Additional contributions and explanations provided by the Me.
+  - Additionally, I've added my contributions and explanations to enhance the educational value of each example.
 
 ## Topics Covered
 - **Data Types:**
