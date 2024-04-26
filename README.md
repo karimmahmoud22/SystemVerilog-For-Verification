@@ -6,7 +6,7 @@ This repository contains SystemVerilog code examples aimed at illustrating vario
   - Dr. Ayman Wahba Lectures
   - Additional contributions and explanations provided by the Me.
 
-## Example Descriptions
+## Topics Covered
 - **Data Types:**
   - Overview of built-in data types, including arrays and queues.
   - Explanation of dynamic arrays, associative arrays, and linked lists.
